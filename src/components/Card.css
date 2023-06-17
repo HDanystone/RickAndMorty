@@ -27,8 +27,9 @@ img{
 }
 
 
-.img{
+.imgag{
     width: 220px;
+    height: 220px;
 
 }
 h2 {
@@ -53,7 +54,7 @@ h2 {
 
 .imagen{
     width: 222px;
-    height: 224x;
+    height: 224px;
     align-items: flex-start;
     flex-direction: row-reverse;
     padding: 0px 0px 2px 1px;

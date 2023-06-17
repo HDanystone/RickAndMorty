@@ -1,0 +1,53 @@
+.login{
+    margin-top: 150px;
+    width: 500px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 51, 137, 0.4);
+    border: rgba(0, 51, 137, 0.5) solid 4px;
+border-radius: 6px;
+box-shadow: 1px 1px 20px 4px rgba(0, 51, 137, 0.3), -1px -1px 20px 4px rgba(0, 51, 137, 0.3);
+}
+input{
+    width: 250px;
+    background-color: rgba(24, 0, 26, 0.75);
+    color: rgb(223, 205, 71);
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 14px;
+    border: 0;
+
+}
+label{
+    color: rgb(223, 205, 71);
+    text-shadow:2px 2px 8px rgba(196, 184, 111, 0.6), 
+    -2px -2px 8px rgba(196, 184, 111, 0.6), 
+    2px -2px 8px rgba(196, 184, 111, 0.6), 
+    -2px 2px 8px rgba(196, 184, 111, 0.6) ; 
+    font-size: 14px;
+}
+button{
+    width: 80px;
+    height: 20px;
+    background-color: rgba(125, 141, 33, 0.6);
+    color: rgb(125, 141, 33);
+    text-shadow:2px 2px 8px rgba(158, 141, 33, 0.6), 
+    -2px -2px 8px rgba(158, 141, 33, 0.6), 
+    2px -2px 8px rgba(158, 141, 33, 0.6), 
+    -2px 2px 8px rgba(158, 141, 33, 0.6) ; 
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 15px;
+    border: 0;
+    margin-top: 15px;
+}
+form{
+    width: 250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}

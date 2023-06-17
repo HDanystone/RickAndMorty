@@ -23,8 +23,6 @@ const [character, setCharacter] = useState({})
       
        <div className="imagen">
 
-            <div className='close' >X</div>
-
           <img className ='img' src={character.image} alt={character.name} />
        </div>
       <div className="info">     

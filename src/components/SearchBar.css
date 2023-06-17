@@ -1,0 +1,49 @@
+.container{
+    height: 60px;
+    width: 256px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+   
+   background-size:cover ;
+    color: rgb(223, 205, 71);    
+}
+.container:hover{
+    .boton{
+        box-shadow: 1px 1px 20px 4px rgba(10, 243, 49, 0.6), -1px -1px 20px 4px rgba(10, 243, 49, 0.6);
+        background-color: rgba(10, 243, 49, 0.5);
+    }
+    .input{
+        box-shadow: 1px 1px 35px 6px rgba(227, 243, 138, 0.9), -1px -1px 35px 6px rgba(227, 243, 138, 0.9);  
+    }
+}
+.input{
+    height: 30px;
+    width: 54px;
+    background-color: rgba(227, 243, 138, 0.15);
+    color: rgb(148, 138, 62);
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 14px;
+    margin-top: 0px;
+    margin-left: 10px;
+    border-radius: 10px; 
+    border: rgba(227, 243, 138, 0.15) solid 2px;
+    box-shadow: 1px 1px 35px 6px rgba(227, 243, 138, 0.6), -1px -1px 35px 6px rgba(227, 243, 138, 0.6);
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 50px;
+    margin-bottom: 28px;
+    border-radius: 15px;
+    background-color: rgba(10, 243, 49, 0.3);
+    box-shadow: 1px 1px 20px 4px rgba(10, 243, 49, 0.3), -1px -1px 20px 4px rgba(10, 243, 49, 0.3);
+    
+    border: 0;
+}
