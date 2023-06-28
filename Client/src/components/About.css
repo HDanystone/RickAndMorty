@@ -1,0 +1,28 @@
+.About{
+    position: relative;
+   margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 750px;
+    height: 322px;
+    background-color: rgba(125, 38, 175, 0.01);
+
+}
+.About:focus{
+  transform:translate(10%,100%) ;
+}
+.Aboutlbl{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 310px;
+    height: 100px;
+    color:rgba(35, 3, 110, 9);
+    font-size: 14px;
+    background-color: rgba(35, 3, 110, 0);
+    text-justify: distribute;
+}

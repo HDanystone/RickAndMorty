@@ -1,0 +1,59 @@
+.container{
+    height: 60px;
+    width: 243px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+  
+    color: rgb(223, 205, 71);    
+}
+
+.input{
+    height: 35px;
+    width: 55px;
+    background-color: rgba(41, 48, 1, 0.1);
+    color: rgb(252, 250, 248);
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 16px ;
+    font-weight: bold;
+    border-radius: 10px; 
+    border: rgba(227, 243, 138, 0.1) solid 1px;
+    box-shadow: 1px 1px 35px 6px rgba(227, 243, 138, 0.4), -1px -1px 35px 6px rgba(227, 243, 138, 0.4);
+}
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 158px;
+    height: 60px;   
+    border: 0;
+}
+.container:hover{
+    .boton{
+    transform: scale(1.1);
+    }
+    .input{
+          box-shadow: 1px 1px 35px 6px rgba(227, 243, 138, 0.9), -1px -1px 35px 6px rgba(227, 243, 138, 0.9);  
+        }
+        .buscar{
+            transform: scale(1.1);
+        }
+      
+    }
+
+
+.imgboton{
+    height: 100%;
+    width: 100%;
+}
+.buscar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 72px;
+    background-size:contain;
+}
