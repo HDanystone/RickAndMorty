@@ -1,56 +1,27 @@
-import { useEffect, useState } from "react";
-import Card from "./Card.jsx"
-import Cards from './Cards.jsx'
-import './Cards.css'
-import { orderCards, filterCards } from "../redux/actions.js";
-import { connect, useDispatch, UseDispatch } from 'react-redux';
-import { removeFav } from "../redux/actions.js";
+import Card from "./Card.jsx";
+import './styles/Cards.css';
+import { useSelector, useDispatch } from 'react-redux';
+import Paginado from "./Paginado";
+import { favNext, favPrev } from "../redux/actions.js";
 
-function Favoritos({myFavorites, onClose, removeFav}){
+export default function Favoritos() {
+   const dispatch = useDispatch();
+   const { myFavorites, favNumPag } = useSelector((state) => state);
+   const CharPorPag = 5;
+   const desde = (favNumPag - 1) * CharPorPag;
+   const hasta = favNumPag * CharPorPag;
+   const numPags = Math.ceil(myFavorites.length / CharPorPag);
+   if (numPags < favNumPag) dispatch(favPrev());
+   if (favNumPag === 0 && myFavorites.length > 0) dispatch(favNext());
+   const viewCharacters = myFavorites?.slice(desde, hasta);
 
-const dispatch = useDispatch()
-const handleOrder= (event)=>{
-   const {value}= event.target
-
-dispatch (orderCards(value))
-   setAux(true)
+   return (
+      <div className="cards">
+         <Paginado numPag={favNumPag} numPags={numPags} container={'favoritos'} />
+         {
+            viewCharacters?.map((char, index) => {
+               return <Card key={char.id} char={char}></Card>
+            })
+         }
+      </div>)
 }
- const handleFilter = (event)=>{
-   const {value}= event.target
-   dispatch (filterCards(value))
- }
-const [aux, setAux] = useState(false)
-    return(
-<div className="cards">
-         <select name= {'Orden'} onChange={handleOrder}>
-            <option value= {'A'}>Ascendente</option>
-            <option value ={'D'}>Descendente</option>
-         </select>
-         <select name ={'Genero'} onChange={handleFilter}>
-            <option value= {'Male'}>Varon</option>
-            <option value ={'Female'}>Mujer</option>
-            <option value= {'Genderless'}>No binario</option>
-            <option value ={'Dunknown'}>Desconocido</option>
-         </select>
-      {
-         myFavorites?.map((char, index)=>{
-            return <Card  key={char.id} char={char} onClose={onClose}></Card> 
-         })
-      }
-    </div>)
-}
-function mapStateToProps(state){
-    return {
-       myFavorites: state.myFavorites
-    }
- }
-
- function mapDispatchToProps(dispatch) {
-    return {
-        removeFav : (id)=>{
-            dispatch(removeFav(Number(id)))
-    }
- }
-}
- 
- export default connect(mapStateToProps)(Favoritos);

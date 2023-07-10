@@ -1,0 +1,46 @@
+.detailCard {
+    width: 284px;
+    height: 500px;
+    border: rgba(64, 1, 70, 0.65) solid 4px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 20px 3px rgba(190, 71, 175, 0.4), -1px -1px 20px 3px rgba(190, 71, 175, 0.4);
+    background-color: rgba(24, 0, 26, 0.65);
+    margin-top: 20px;
+}
+.detailInfo{
+    width: 282px;
+    height: 123px;
+    padding: 2px 0px 6px 1px;
+    margin: 3px 2px 0px 0px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3px;
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 12px;
+    color: rgb(144, 206, 44);
+}
+.detailImagen{
+    width: 280px;
+    height: 284px;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    padding: 0px 0px 2px 1px;
+    margin: 3px 0px 2px 4px;
+    border: 0px;
+    position: relative;
+    display: flex;
+
+}
+.detailImg{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0px 3px 0px 0px;
+}
+h2 {
+    margin: 1px 2px 0px 10px;
+    color: rgb(223, 205, 71);
+    text-shadow:2px 2px 8px rgba(196, 184, 111, 0.6), 
+    -2px -2px 8px rgba(196, 184, 111, 0.6), 
+    2px -2px 8px rgba(196, 184, 111, 0.6), 
+    -2px 2px 8px rgba(196, 184, 111, 0.6) ;
+}

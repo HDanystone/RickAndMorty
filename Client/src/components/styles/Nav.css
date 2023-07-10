@@ -1,6 +1,6 @@
 .nav{
     width: 100dvw;
-    height: 80px;
+    height: 80;
     padding: 5px 10px 5px 15px;
     margin: 0px 2px 0px 0px;
     display: flex;
@@ -10,10 +10,8 @@
     font-family: 'Courier New', Courier, monospace;  
     font-size: 12px;
     color: rgb(144, 206, 44);
-    background-color: rgba(95, 12, 142, 0.45);
-    border: rgba(95, 12, 142, 0.45) solid 4px;
-border-radius: 6px;
-box-shadow: 1px 1px 20px 4px rgba(95, 12, 142, 0.3), -1px -1px 20px 4px rgba(95, 12, 142, 0.3);
+    
+    box-shadow: 1px 1px 20px 4px rgba(190, 71, 175, 0.3), -1px -1px 20px 6px rgba(190, 71, 175, 0.3);
     
 }
 img{
@@ -22,6 +20,7 @@ img{
 }
 .imgenNav{
     height: 60px;
+    cursor: pointer;
 }
 .imgenNav:hover{
 transform: scale(1.1);

@@ -1,4 +1,4 @@
-import {ADD_FAV, FILTER, ORDER, REMOVE_FAV, ADD_CHAR, REMOVE_CHAR, PREV, NEXT} from './actionTypes.js'
+import {ADD_FAV, FILTER, ORDER, REMOVE_FAV, ADD_CHAR, REMOVE_CHAR, PREV, NEXT,FAVPREV, FAVNEXT} from './actionTypes.js'
    
 export function  addChar(personaje) {
   return {
@@ -44,5 +44,15 @@ export function  addFav(personaje) {
   export function  next() {
     return {
       type: NEXT
+    }
+  }
+  export function  favPrev() {
+    return {
+      type: FAVPREV,
+    }
+  }
+  export function  favNext() {
+    return {
+      type: FAVNEXT
     }
   }

@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
     border: transparent ;
     border-radius: 250px;
 }
@@ -17,9 +16,9 @@
     justify-content: center;
     background-size: contain;
     border: transparent ;
-border-radius: 250px; 
-position: relative;
-  background-size: contain;
+    border-radius: 250px; 
+    position: relative;
+    background-size: contain;
  
 }
 .sombra{
@@ -32,9 +31,8 @@ position: relative;
     box-shadow: 1px 1px 40px 6px rgba(75, 184, 2, 0.8), -1px -1px 40px 6px rgba(75, 184, 2, 0.8);
     background-size: contain;
     border: transparent ;
-border-radius: 250px;
-
-position: absolute;
+    border-radius: 250px;
+    position: absolute;
 }
 
 input{
@@ -47,31 +45,36 @@ input{
 }
 label{
     color: rgb(223, 205, 71);
-
     font-size: 14px;
 }
+
 .lblmsg{
-    color: crimson;
+    color: rgb(212, 3, 3);
+    background-color: rgba(7, 15, 0, 0.8);
     font-size: 14px; 
     max-width: 80%;
+    padding: 0px 0px 6px 0px;
     margin-bottom: 10px;
-    height: 14px;
-    font-weight: bold;
-
+    height: 14px;    
 }
+
 button{
     width: 80px;
     height: 20px;
-    background-color: rgba(177, 145, 3, 0.6);
-    color: rgb(125, 141, 33);
-    text-shadow:2px 2px 8px rgba(158, 141, 33, 0.6), 
-    -2px -2px 8px rgba(158, 141, 33, 0.6), 
-    2px -2px 8px rgba(158, 141, 33, 0.6), 
-    -2px 2px 8px rgba(158, 141, 33, 0.6) ; 
+    background-color: rgba(163, 88, 2, 0.6);
+    color: rgb(159, 177, 57);
+    text-shadow:2px 2px 8px rgba(17, 15, 3, 0.7), 
+    -2px -2px 8px rgba(17, 15, 3, 0.7), 
+    2px -2px 8px rgba(17, 15, 3, 0.7), 
+    -2px 2px 8px rgba(17, 15, 3, 0.7) ; 
     font-family: 'Courier New', Courier, monospace;  
     font-size: 15px;
     border: 0;
     margin-top: 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(201, 107, 1, 0.8);   
 }
 form{
     margin-top: 50px;

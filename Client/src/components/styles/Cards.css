@@ -1,0 +1,59 @@
+.cards{
+    width: 100dvw;
+    height: 80%;
+    border: 0px;
+    padding: 0px 5px 5px 20px;
+    margin: 0px 2px 0px 0px;
+    display: grid;
+    grid:
+    '. . . . .'
+    '. . . . .';
+    gap: 15px;
+    justify-content: center;
+    align-items: start;
+    justify-items: center;
+    
+.paginado{
+    grid-column: 1 / 6;
+    grid-row: 1;
+    width: 700px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.botones{
+    height: 30px;
+    width: 10px;
+    background-size: contain;
+
+}
+.botones:hover{
+    transform: scale(1.1);
+}
+.botonContainer{
+    height: 40px;
+    width: 171px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.divLbl{
+    height: 55px;
+    width: 64px;
+    margin: 0px 10px 0px 10px;
+    background-size: 100% 100%;
+}
+.divCenter{
+    width: 166px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pag{
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 16px;
+    color: rgb(144, 206, 44);
+}
+}
